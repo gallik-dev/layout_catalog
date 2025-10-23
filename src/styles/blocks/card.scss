@@ -1,18 +1,20 @@
 $card-width: 200px;
 $card-height: 406px;
-$bodrer-radius: 5px;
+$border-radius: 5px;
 $border-color: #f3f3f3;
 $font-400-color: #616070;
 $font-500-color: #060b35;
 $bcg-color: #00acdc;
 $white-color: #fff;
+$title-color: #34568b;
+$space-xs: 4px;
 
 .card {
   box-sizing: border-box;
   width: $card-width;
   min-height: $card-height;
   border: 1px solid $border-color;
-  border-radius: $bodrer-radius;
+  border-radius: $border-radius;
   font-family: roboto, sans-serif;
   padding: 32px 16px 16px;
   transition: 300ms;
@@ -35,7 +37,7 @@ $white-color: #fff;
   }
 
   &__title {
-    margin-bottom: 4px;
+    margin-bottom: $space-xs;
     color: $font-500-color;
     font-size: 12px;
     font-weight: 500;
@@ -91,7 +93,7 @@ $white-color: #fff;
     align-items: center;
     height: 40px;
     background-color: $bcg-color;
-    border-radius: $bodrer-radius;
+    border-radius: $border-radius;
     text-transform: uppercase;
     text-decoration: none;
     color: $white-color;
@@ -114,6 +116,6 @@ $white-color: #fff;
   }
 
   &:hover &__title {
-    color: #34568b;
+    color: $title-color;
   }
 }

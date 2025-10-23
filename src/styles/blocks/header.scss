@@ -1,6 +1,7 @@
 $font-500-color: #060b35;
 $bcg-color: #00acdc;
 $shadow-color: #0000000d;
+$nav-link-height: 60px;
 
 .header {
   box-sizing: border-box;
@@ -51,8 +52,8 @@ $shadow-color: #0000000d;
     font-size: 12px;
     font-weight: 500;
     text-transform: uppercase;
-    height: 60px;
-    line-height: 60px;
+    height: $nav-link-heigh;
+    line-height: $nav-link-heigh;
     transition: 300ms;
 
     &.is-active {
