@@ -1,5 +1,5 @@
-$color-text: #060b35;
-$color: #00acdc;
+$font-500-color: #060b35;
+$bcg-color: #00acdc;
 
 .header {
   box-sizing: border-box;
@@ -45,16 +45,17 @@ $color: #00acdc;
     justify-content: center;
     white-space: nowrap;
     text-decoration: none;
-    color: $color-text;
+    color: $font-500-color;
     font-family: Roboto, sans-serif;
     font-size: 12px;
     font-weight: 500;
     text-transform: uppercase;
     height: 60px;
     line-height: 60px;
+    transition: 300ms;
 
-    &--active {
-      color: $color;
+    .is-active {
+      color: $bcg-color;
 
       &::after {
         content: '';
@@ -63,13 +64,13 @@ $color: #00acdc;
         left: 0;
         right: 0;
         height: 4px;
-        background-color: $color;
+        background-color: $bcg-color;
         border-radius: 8px;
       }
     }
 
     &:hover {
-      color: $color;
+      color: $bcg-color;
     }
   }
 }

@@ -1,5 +1,6 @@
 $card-width: 200px;
 $card-height: 406px;
+$bodrer-radius: 5px;
 $border-color: #f3f3f3;
 $font-400-color: #616070;
 $font-500-color: #060b35;
@@ -11,7 +12,7 @@ $white-color: #fff;
   width: $card-width;
   min-height: $card-height;
   border: 1px solid $border-color;
-  border-radius: 5px;
+  border-radius: $bodrer-radius;
   font-family: roboto, sans-serif;
   padding: 32px 16px 16px;
   transition: 300ms;
@@ -39,6 +40,7 @@ $white-color: #fff;
     font-size: 12px;
     font-weight: 500;
     line-height: 18px;
+    transition: 300ms;
   }
 
   &__code {
@@ -89,7 +91,7 @@ $white-color: #fff;
     align-items: center;
     height: 40px;
     background-color: $bcg-color;
-    border-radius: 5px;
+    border-radius: $bodrer-radius;
     text-transform: uppercase;
     text-decoration: none;
     color: $white-color;

@@ -2,9 +2,9 @@
   padding: 50px 40px;
   display: grid;
   grid-template-columns: repeat(1, $card-width);
-  gap: 48px;
   justify-content: center;
-  row-gap: 46px;
+  row-gap: 48px;
+  column-gap: 46px;
 }
 
 @media (min-width: 488px) {
