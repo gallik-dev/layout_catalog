@@ -1,5 +1,6 @@
 $font-500-color: #060b35;
 $bcg-color: #00acdc;
+$shadow-color: #0000000d;
 
 .header {
   box-sizing: border-box;
@@ -8,7 +9,7 @@ $bcg-color: #00acdc;
   justify-content: space-between;
   width: 100%;
   padding: 0 50px;
-  box-shadow: 0 2px 4px 0 #0000000d;
+  box-shadow: 0 2px 4px 0 $shadow-color;
 }
 
 .logo {
@@ -54,7 +55,7 @@ $bcg-color: #00acdc;
     line-height: 60px;
     transition: 300ms;
 
-    .is-active {
+    &.is-active {
       color: $bcg-color;
 
       &::after {

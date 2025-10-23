@@ -3,8 +3,7 @@
   display: grid;
   grid-template-columns: repeat(1, $card-width);
   justify-content: center;
-  row-gap: 48px;
-  column-gap: 46px;
+  gap: 46px 48px;
 }
 
 @media (min-width: 488px) {
